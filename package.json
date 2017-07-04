@@ -1,0 +1,26 @@
+{
+  "name": "jobcrawl",
+  "version": "1.0.0",
+  "description": "scraps job data from a website and stores on firebase",
+  "main": "crawlJobs.js",
+  "dependencies": {
+    "crawlho": "^0.0.3",
+    "firebase-admin": "^4.1.4",
+    "node-horseman": "^3.2.0",
+    "phantomjs-prebuilt": "^2.1.14",
+    "selenium-webdriver": "^3.3.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crawl",
+    "web",
+    "jobs"
+  ],
+  "author": "Kieran Sisam",
+  "license": "ISC"
+}
