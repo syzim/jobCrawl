@@ -12,7 +12,7 @@ var mysql = require('mysql');
 var jobTitles = [];
 
 var _ = require('lodash');
-var dryRun = require('./dryRun.js');
+var dryRun = require('./dryrun.js');
 
 if(config.dryRun == false){
   //Deletes mysql database table ready for a new web crawl
@@ -42,17 +42,17 @@ console.log("about to crawl...");
 //crawl website for page links to items
 if(config.dryRun == false){
 crawlho.createJobSkeleton(function(jobArray){
-  var qty = jobArray.length;
-    //var qty = 1
+  
+//  var qty = jobArray.length;
+    var qty = 2
     var counter = 0;
     // delayedHorse(jobArray[5]);
     function next() {
         if (counter < qty) {
-            goHorseman(jobArray[counter],(counter + 1),jobArray);
+            delayedHorse(jobArray[counter]);
             counter++
-            setTimeout(next, 8000);
+            setTimeout(next, 5000);
         }
-
     }
     next();
 
@@ -65,13 +65,19 @@ if(config.dryRun == true){
   dryRun.populateFirebase(db);
   //db.goOffline();
 }else{
-  console.log("dry run set to false crawling web..")
+  console.log("dry run set as false")
 }
 
 
 
+function delayedHorse(job) {
+   goHorseman(job);
+console.log("job passed to delayed horse" + job)
 
-function goHorseman(jobUrl,counter,jobArray) {
+}
+
+
+function goHorseman(jobUrl) {
 //  var db = admin.database();
 var jobsRef = db.ref("jobs");
 var descriptionsRef = db.ref("descriptions");
@@ -115,6 +121,7 @@ var watchListRef = db.ref("watchlist");
         .text("#titletextonly")
         .then(function (t) {
             title = t;
+            console.log(t);
 
         })
         // .waitForSelector("[itemprop=datePosted]", { timeout: 30000 })
@@ -138,19 +145,24 @@ var watchListRef = db.ref("watchlist");
 
             var keyRef = jobsRef.push(jobObject).key
 
-            var pool = mysql.createPool({
+            var conn = mysql.createConnection({
               host: config.mysqlhost,
               user: config.mysqluser,
               password: config.mysqlpassword,
-              database: config.mysqldatabase,
-              multipleStatements: true
+              database: config.mysqldatabase
 
             });
 
+            var sql = "insert into jobs set ?"
 
 
+            conn.query(sql,jobObject, function (err, results, fields) {
+              if(err) throw err;
+              conn.end();
 
 
+               console.log("Inserted Job Object: " + jobObject);
+            });
             descriptionsRef.child(keyRef).set({
                 jobDescription: text
 
@@ -160,7 +172,7 @@ var watchListRef = db.ref("watchlist");
         //
             var wordsArray = text.split(/[\s-]/);
             var massagedWords = [];
-            console.log("---------_ " +title+"_---------");
+            console.log("----Retrieved Webpage.. adding to DB---------")
 
 
 
@@ -189,36 +201,40 @@ var watchListRef = db.ref("watchlist");
               jobTitles.push(text);
           var uniqueWords = _.uniq(massagedWords)
           var uniqueObject = [];
+          for(let i = 0;i<uniqueWords.length;i++){
+            uniqueObject.push([uniqueWords[i],1]);
+          }
 
 
-          var jobId;
+console.log("length of massaged Word Array = " + massagedWords.length)
+console.log("length of Unique Word Array = " + uniqueWords.length)
 
-  var sql = "insert into jobs set ?;select last_insert_id() as id"
-//store job data and nest 2nd query to ensure no foreign key contstrains are broken.
-pool.getConnection(function(err,connection){
-  connection.query(sql,jobObject, function (err, results, fields) {
-  if(err) throw err;
-  results[1].forEach(function(result){
-    jobId = result.id;
-  })
-  for(let i = 0;i<uniqueWords.length;i++){
-    uniqueObject.push([uniqueWords[i],jobId]);
-  }
+var conn2 = mysql.createConnection({
+  host: config.mysqlhost,
+  user: config.mysqluser,
+  password: config.mysqlpassword,
+  database: config.mysqldatabase
 
-   var sql = 'insert into sqlwords (theword,jobId) values ?';
-                connection.query(sql,[uniqueObject], function (err, results, fields) {
-                    if(err){
-                    throw err;
-                    }
-                    connection.release();
-                    pool.end();
-                });
 });
-});
+
+
+var sql = 'insert into sqlwords values ? on duplicate key update frequency = frequency + 1';
+             conn2.query(sql,[uniqueObject], function (err, results, fields) {
+                 if(err) throw err;
+                 conn2.end();
+                console.log("bulk inserted into DB");
+             });
 
         })
+        .then(function(){
+          //  console.log("counting words...");
+
+
+        })
+
+
         .finally(function () {
-            if (jobTitles.length == jobArray.length) {
+            if (jobTitles.length == 2) {
                 console.log("completed Dump.")
 
 

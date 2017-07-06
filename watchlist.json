@@ -1,0 +1,491 @@
+{
+  "adobe" : {
+    "isKeyword" : true
+  },
+  "agile" : {
+    "isKeyword" : true
+  },
+  "air" : {
+    "isKeyword" : true
+  },
+  "airflow" : {
+    "isKeyword" : true
+  },
+  "ajax" : {
+    "isKeyword" : true
+  },
+  "ajaxjson" : {
+    "isKeyword" : true
+  },
+  "algorithm" : {
+    "isKeyword" : true
+  },
+  "algorithms" : {
+    "isKeyword" : true
+  },
+  "analytic" : {
+    "isKeyword" : true
+  },
+  "analytics" : {
+    "isKeyword" : true
+  },
+  "android" : {
+    "isKeyword" : true
+  },
+  "rails" : {
+    "isKeyword" : true
+  },
+  "ruby" : {
+    "isKeyword" : true
+  },
+  "androidexperience" : {
+    "isKeyword" : true
+  },
+  "angular" : {
+    "isKeyword" : true
+  },
+  "angularjs" : {
+    "isKeyword" : true
+  },
+  "angularjscomfortable" : {
+    "isKeyword" : true
+  },
+  "api" : {
+    "isKeyword" : true
+  },
+  "apis" : {
+    "isKeyword" : true
+  },
+  "apiswebpac" : {
+    "isKeyword" : true
+  },
+  "applicationstesting" : {
+    "isKeyword" : true
+  },
+  "asynchronous" : {
+    "isKeyword" : true
+  },
+  "automation" : {
+    "isKeyword" : true
+  },
+  "awe" : {
+    "isKeyword" : true
+  },
+  "aws" : {
+    "isKeyword" : true
+  },
+  "awsaws" : {
+    "isKeyword" : true
+  },
+  "azavedo" : {
+    "isKeyword" : true
+  },
+  "azure" : {
+    "isKeyword" : true
+  },
+  "backbone" : {
+    "isKeyword" : true
+  },
+  "backbonejs" : {
+    "isKeyword" : true
+  },
+  "backend" : {
+    "isKeyword" : true
+  },
+  "backends" : {
+    "isKeyword" : true
+  },
+  "bootstrap" : {
+    "isKeyword" : true
+  },
+  "buddybid" : {
+    "isKeyword" : true
+  },
+  "ccplusplus" : {
+    "isKeyword" : true
+  },
+  "cloud" : {
+    "isKeyword" : true
+  },
+  "cocoa" : {
+    "isKeyword" : true
+  },
+  "cplusplus" : {
+    "isKeyword" : true
+  },
+  "crm" : {
+    "isKeyword" : true
+  },
+  "csharp" : {
+    "isKeyword" : true
+  },
+  "csharpnet" : {
+    "isKeyword" : true
+  },
+  "csharpsql" : {
+    "isKeyword" : true
+  },
+  "css" : {
+    "isKeyword" : true
+  },
+  "database" : {
+    "isKeyword" : true
+  },
+  "databases" : {
+    "isKeyword" : true
+  },
+  "debugging" : {
+    "isKeyword" : true
+  },
+  "deploying" : {
+    "isKeyword" : true
+  },
+  "deployment" : {
+    "isKeyword" : true
+  },
+  "designresponsive" : {
+    "isKeyword" : true
+  },
+  "designtesting" : {
+    "isKeyword" : true
+  },
+  "devops" : {
+    "isKeyword" : true
+  },
+  "docker" : {
+    "isKeyword" : true
+  },
+  "ecmascript" : {
+    "isKeyword" : true
+  },
+  "edge" : {
+    "isKeyword" : true
+  },
+  "elastic" : {
+    "isKeyword" : true
+  },
+  "elasticsearch" : {
+    "isKeyword" : true
+  },
+  "embedded" : {
+    "isKeyword" : true
+  },
+  "ember" : {
+    "isKeyword" : true
+  },
+  "emberjs" : {
+    "isKeyword" : true
+  },
+  "enterprise" : {
+    "isKeyword" : true
+  },
+  "excel" : {
+    "isKeyword" : true
+  },
+  "fireworks" : {
+    "isKeyword" : true
+  },
+  "flux" : {
+    "isKeyword" : true
+  },
+  "foundationexperience" : {
+    "isKeyword" : true
+  },
+  "framework" : {
+    "isKeyword" : true
+  },
+  "frameworks" : {
+    "isKeyword" : true
+  },
+  "frontend" : {
+    "isKeyword" : true
+  },
+  "frontends" : {
+    "isKeyword" : true
+  },
+  "fullstack" : {
+    "isKeyword" : true
+  },
+  "git" : {
+    "isKeyword" : true
+  },
+  "gitagile" : {
+    "isKeyword" : true
+  },
+  "gitflow" : {
+    "isKeyword" : true
+  },
+  "github" : {
+    "isKeyword" : true
+  },
+  "grunt" : {
+    "isKeyword" : true
+  },
+  "gulp" : {
+    "isKeyword" : true
+  },
+  "html" : {
+    "isKeyword" : true
+  },
+  "ios" : {
+    "isKeyword" : true
+  },
+  "iosandroid" : {
+    "isKeyword" : true
+  },
+  "java" : {
+    "isKeyword" : true
+  },
+  "javascript" : {
+    "isKeyword" : true
+  },
+  "javascriptangularjsuiux" : {
+    "isKeyword" : true
+  },
+  "javascriptcommercial" : {
+    "isKeyword" : true
+  },
+  "javascriptexpertise" : {
+    "isKeyword" : true
+  },
+  "javascriptnodejs" : {
+    "isKeyword" : true
+  },
+  "jenkins" : {
+    "isKeyword" : true
+  },
+  "jquery" : {
+    "isKeyword" : true
+  },
+  "jqueryangularjs" : {
+    "isKeyword" : true
+  },
+  "js" : {
+    "isKeyword" : true
+  },
+  "jsawesome" : {
+    "isKeyword" : true
+  },
+  "json" : {
+    "isKeyword" : true
+  },
+  "jsonxml" : {
+    "isKeyword" : true
+  },
+  "junior" : {
+    "isKeyword" : true
+  },
+  "knockout" : {
+    "isKeyword" : true
+  },
+  "kroger" : {
+    "isKeyword" : true
+  },
+  "laravel" : {
+    "isKeyword" : true
+  },
+  "less" : {
+    "isKeyword" : true
+  },
+  "linq" : {
+    "isKeyword" : true
+  },
+  "linux" : {
+    "isKeyword" : true
+  },
+  "microsoft" : {
+    "isKeyword" : true
+  },
+  "middleware" : {
+    "isKeyword" : true
+  },
+  "mobile" : {
+    "isKeyword" : true
+  },
+  "mocha" : {
+    "isKeyword" : true
+  },
+  "modules" : {
+    "isKeyword" : true
+  },
+  "mongodb" : {
+    "isKeyword" : true
+  },
+  "mongoose" : {
+    "isKeyword" : true
+  },
+  "ms" : {
+    "isKeyword" : true
+  },
+  "mssql" : {
+    "isKeyword" : true
+  },
+  "mysql" : {
+    "isKeyword" : true
+  },
+  "nix" : {
+    "isKeyword" : true
+  },
+  "node" : {
+    "isKeyword" : true
+  },
+  "nodejs" : {
+    "isKeyword" : true
+  },
+  "nosql" : {
+    "isKeyword" : true
+  },
+  "oauth" : {
+    "isKeyword" : true
+  },
+  "objective" : {
+    "isKeyword" : true
+  },
+  "opengl" : {
+    "isKeyword" : true
+  },
+  "oracle" : {
+    "isKeyword" : true
+  },
+  "paas" : {
+    "isKeyword" : true
+  },
+  "photoshop" : {
+    "isKeyword" : true
+  },
+  "php" : {
+    "isKeyword" : true
+  },
+  "python" : {
+    "isKeyword" : true
+  },
+  "react" : {
+    "isKeyword" : true
+  },
+  "reactjs" : {
+    "isKeyword" : true
+  },
+  "reduxexperience" : {
+    "isKeyword" : true
+  },
+  "remotelynodejssql" : {
+    "isKeyword" : true
+  },
+  "require" : {
+    "isKeyword" : true
+  },
+  "requirejs" : {
+    "isKeyword" : true
+  },
+  "rest" : {
+    "isKeyword" : true
+  },
+  "rfp" : {
+    "isKeyword" : true
+  },
+  "saas" : {
+    "isKeyword" : true
+  },
+  "saml" : {
+    "isKeyword" : true
+  },
+  "sass" : {
+    "isKeyword" : true
+  },
+  "scrum" : {
+    "isKeyword" : true
+  },
+  "scrumhigh" : {
+    "isKeyword" : true
+  },
+  "scrumkanban" : {
+    "isKeyword" : true
+  },
+  "sdk" : {
+    "isKeyword" : true
+  },
+  "sdlc" : {
+    "isKeyword" : true
+  },
+  "server" : {
+    "isKeyword" : true
+  },
+  "silverstripe" : {
+    "isKeyword" : true
+  },
+  "sql" : {
+    "isKeyword" : true
+  },
+  "ssis" : {
+    "isKeyword" : true
+  },
+  "ssrs" : {
+    "isKeyword" : true
+  },
+  "stack" : {
+    "isKeyword" : true
+  },
+  "startup" : {
+    "isKeyword" : true
+  },
+  "symfony" : {
+    "isKeyword" : true
+  },
+  "timbuddybidcom" : {
+    "isKeyword" : true
+  },
+  "tomcat" : {
+    "isKeyword" : true
+  },
+  "typescript" : {
+    "isKeyword" : true
+  },
+  "ui" : {
+    "isKeyword" : true
+  },
+  "uifront" : {
+    "isKeyword" : true
+  },
+  "underscorelodash" : {
+    "isKeyword" : true
+  },
+  "ux" : {
+    "isKeyword" : true
+  },
+  "uxui" : {
+    "isKeyword" : true
+  },
+  "vanilla" : {
+    "isKeyword" : true
+  },
+  "veujs" : {
+    "isKeyword" : true
+  },
+  "voip" : {
+    "isKeyword" : true
+  },
+  "vueexperience" : {
+    "isKeyword" : true
+  },
+  "web" : {
+    "isKeyword" : true
+  },
+  "webapi" : {
+    "isKeyword" : true
+  },
+  "website" : {
+    "isKeyword" : true
+  },
+  "xml" : {
+    "isKeyword" : true
+  },
+  "xslt" : {
+    "isKeyword" : true
+  },
+  "zen" : {
+    "isKeyword" : true
+  },
+  "zuricka" : {
+    "isKeyword" : true
+  }
+}
