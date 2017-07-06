@@ -109,10 +109,10 @@ var watchListRef = db.ref("watchlist");
         .userAgent('Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0')
 
         .open((baseUrl + jobUrl))
-      //  .screenshot(jobUrl + ".png")
+        .screenshot(jobUrl + ".png")
 
-        .waitForSelector("#titletextonly", { timeout: 6000 })
-        .text("#titletextonly")
+        .waitForSelector(config.titleIdentifier, { timeout: 6000 })
+        .text(config.titleIdentifier)
         .then(function (t) {
             title = t;
 
@@ -122,9 +122,9 @@ var watchListRef = db.ref("watchlist");
         // .then(function (d) {
         //     date = d;
         // })
-        .waitForSelector("#postingbody", { timeout: 6000 })
-        .html(["#postingbody"],savePath)
-        .text("#postingbody")
+        .waitForSelector(config.bodyIdentifier, { timeout: 6000 })
+        .html([config.bodyIdentifier],savePath)
+        .text(config.bodyIdentifier)
         .then(function (text) {
           //todo write all text to a file
             text = removeComments(text);
